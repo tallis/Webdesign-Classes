@@ -1,8 +1,6 @@
 IEEE-CS-Training - PHP Introduction
 ===================================
 
-basic.php - Simple PHP file with responsive bootstrap
-
 php01.html - Hey this is a simple HTML file with PHP code
 
 php01.php - The same but as a PHP file
