@@ -1,54 +1,137 @@
 <html>
 
+ <!--
+  ** Webdesign and Webdevelopment 101 **
+  	- Author: Rui Costa
+  	- Last Updated: June 2013
+
+  	- Courses given:
+  		1. IEEE Computer Society Webdesign Bootcamp (May 2013) (Lamia, Greece)
+  		2. The Startup Scholarship Responsive Webdesign Development Workshop (June 2013) (Lisbon, Portugal)
+
+  	- Description:
+  		This file presents the basic HTML document with the inclusion of the Bootstrap styling and scripting. Note a few changes on the fonts and aspect when compared with the HTML 101/basic.html.
+
+ -->
+
 <head>
 
+	<title>Title of the document</title>
 
- <!-- Bootstrap -->
-    <link href="css/bootstrap.css" rel="stylesheet" media="screen">
+	<meta name="keywords" content="HTML, CSS, Introction, 101">
+	<meta name="description" content="This is a HTML sample document now with bootstrap">
+	<meta name="author" content="Rui Costa">
+
+	<!-- Including Twitter Bootstrap stylesheet-->
+	<link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+
+   
 </head>
 
 <body>
+	<!-- In order to define a correct structure for documents, Twitter Bootstrap defines several classes that will detail and define how information is going to be displayed in the page. 
+	Bootstrap divides a webpage in a Grid system with 12 columns. Those columns can be grouped to organize the content in the webpage. That grouping of information and the way that all the webpage is organized is called Wireframing. Several examples of wireframes can be found in http://www.wireframeshowcase.com/
+	For more information about the Grid system one should check http://twitter.github.io/bootstrap/scaffolding.html-->
 
-	<div class="containter">
+	<!-- The basic element of the Twitter Bootstrap Grid System is the container. Note that in HTML to declare a Grid class one should use the <div class="****"></div> element. All contents of the webpage should be put inside a container -->
+
+	<div class="container">
+		<!-- As in every Grid system, we need both columns and rows, so the row will be the next element to be declared. Inse the rows we will then define how we want the information to be organized in our webpage.
+		The wireframing used in this example is the following:
+
+
+	    +-------------------------------------------------+
+	    |                                                 |
+	    |         Space for a big image (12)              |
+	    |                                                 |
+	    |                                                 |
+	    +-------------------------------------------------+
+	    +-----------------+----------------+--------------+
+	    |                 |                |              |
+	    |   Highlight     |  Highlight     |  Highlight   |
+	    |   Content (4)   |  Content (4)   |  Content (4) |
+	    |                 |                |              |
+	    |                 |                |              |
+	    +-----------------+----------------+--------------+
+	    +----------------------------------+--------------+
+	    |                                  |              |
+	    |     Some scription text about    |  A nice image|
+	    |     something relevant of your   |  (4)         |
+	    |     product or company (8)       |              |
+	    |                                  |              |
+	    |                                  |              |
+	    +----------------------------------+--------------+
+	    +----------------+-----------------+--------------+
+	    |                |                 |              |
+	    | Footer         |  Footer         | Footer       |
+	    | Separator (4)  |  Separator (4)  | Separator (4)|
+	    |                |                 |              |
+	    |                |                 |              |
+	    |                |                 |              |
+	    +----------------+-----------------+--------------+
+
+	    Note the quantity of columns we will use in each row for each part of the content stated inside the ().
+-->
+		<div class="row">
+			<div class="span12"> This will be a space for a big image or Hero stuff</div>
+		</div> <!-- end of row #1 -->
 
 		<div class="row">
+			<div class="span4"> 
+				<h2>My product 1</h2>
+				<p> Some nice and catchy information about my product</p>
+			 </div>
 
-			<div class="span12">
+			 <div class="span4"> 
+				<h2>My product 2</h2>
+				<p> Some nice and catchy information about my product</p>
+			 </div>
 
-				<h1>It's all about fruits</h1>
-
-			</div>
-
-		</div>
+			 <div class="span4"> 
+				<h2>My product 3</h2>
+				<p> Some nice and catchy information about my product</p>
+			 </div>	
+		</div> <!-- end of row #2 -->
 
 		<div class="row">
+			<div class="span8"> 
+				<h2>My company rocks and i will let you know why</h2>
+				<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+			 </div>
 
-			<div class="span4">
+			  <div class="span4"> 
+				<img src="http://blogoscoped.com/files/google-com-history/1998.jpg">
+			 </div>	
 
-				<h2> Red Fruits</h2>
+		</div> <!-- end of row #3 -->
 
-			</div>
+		<div class="row">
+			<div class="span4"> 
+				<h2>Contact us</h2>
+				<p> emails and stuff</p>
+			 </div>
 
-			<div class="span4">
+			 <div class="span4"> 
+				<h2>About my company</h2>
+				<p> Why not a small abstract about your company?</p>
+			 </div>
 
-				<h2> Yellow Fruits</h2>
-
-			</div>
-
-			<div class="span4">
-
-				<h2> Green Fruits</h2>		
-
-			</div>
+			 <div class="span4"> 
+				<h2>Social Media</h2>
+				<p> Everyone likes social media</p>
+			 </div>	
 
 
-		</div>
+		</div> <!-- end of row #4 -->
 
 
-	</div>
+	</div> <!-- end of container -->
 
+
+	<!-- Including Twitter Bootstrap Javascript. Note the need of including jquery.-->
+	<script src="http://code.jquery.com/jquery.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 	
-
 </body>
 
 </html>
